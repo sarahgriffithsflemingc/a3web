@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Projects</title>
+<link rel = "shortcut icon" type = "image/png" href="images/favicon.png">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="grp12styles.css">
+</head>
+<body>
+
+  
+<!-- START of Navbar -->
+<!-- Sarah Griffiths; Last Modified 6-Dec-2020 --> 
+<!-- Desktop-Tablet -->
+<!-- This section contains the navbar for desktop and tablet sized screens (above 645px) -->
+<!-- The navbar is displayed horizontally in an unordered list with the company logo to the right -->
+<!-- Our "many in one" page is accessed through a dropdown menu under GIS Services, available upon hover -->
+<!-- While the first option in the dropdown menu links to the top of the GIS page, the rest link to anchors on the GIS page based on main content headings -->
+<!-- The page currently on is highlighted in a different colour from the base navbar, which coincides with the colour you see upon hover -->
+<ul class="desktopnavbar">
+<li><a href="index.html">Home</a>
+<li class="dropdown">
+<button class="dropbtn">GIS Services</button>
+<div class="dropdown-content">
+<a href="GISservices.html">Service Inquiries</a>
+<a href="GISservices.html#Mapping">Municipal Mapping</a>
+<a href="GISservices.html#Web">GIS Web Applications</a>
+<a href="GISservices.html#Analysis">Spatial Analysis</a>
+<a href="GISservices.html#Sensing">Environmental Modeling and Remote Sensing</a>
+</div>
+</li>
+<li><a class="active" href="Projects.html">Projects</a>
+<li><a href="MeetOurTeam.html">Meet Our Team</a>
+<li><a href="Careers.html">Careers</a>
+<li class="desktopnavlogo"><img src ="images/navbarlogo.png" alt="Spatia GIS Company Logo" width="200" height="40">
+</ul>	
+  
+<!-- Mobile -->
+<!-- This section contains the navbar that will display on small screens (below 645px) -->
+<!-- The menu changes from a horizontal display to a dropdown menu accessible by the "hamburger" button -->
+<!-- Hamburger modified from https://www.youtube.com/watch?v=At4B7A4GOPg&ab_channel=WebDevSimplified -->
+<!-- The following Javascript is used to make the hamburger interactive by click on/off to open and close the menu -->
+<script src="grp12javascript.js" defer></script>
+<nav class="mobilenavbar">
+<div class="company-title">
+<img src ="images/navbarlogo.png" alt="Spatia GIS Company Logo" width="200" height="40">
+</div>
+<a href="#" class="toggle-button">
+<span class="bar"></span>
+<span class="bar"></span>
+<span class="bar"></span>
+</a>
+<div class="mobilenavbar-links">
+<ul>
+<li><a href="index.html">Home</a></li>
+<li><a href="GISservices.html">GIS Serivces</a></li>
+<li><a href="Projects.html">Projects</a></li>
+<li><a href="MeetOurTeam.html">Meet Our Team</a></li>
+<li><a href="Careers.html">Careers</a></li>
+</ul>
+</div>
+</nav>
+<!-- END of Navbar-->
+
+<!-- START of Header -->
+<!-- Sarah Griffiths; Last Modified 7-Dec-2020 -->
+<!-- Desktop-Tablet -->
+<!-- This section contains the header that is displayed on screens larger than 645px (desktop and tablets) -->
+<!-- The Submit An Inquiry button links to an anchor on a "hidden" page that represents where a contact form would be held, designed by Toby -->
+<header>
+<div class="head-text-left">
+<!-- Public Domain Creative Commons Image from https://pixabay.com/photos/mount-polley-environmental-workers-4770053/ ; no attribution required -->
+<img class="projectsheaderimage" src ="images/projectsimg.jpg" alt="Environmental Technicians on Bridge" width="480" height="320">
+</div>
+<div class="head-text-right">
+<h1 class="company">Spatia GIS Projects</h1>
+<p class="slogan">See Your Next Project Here</p>
+<a class="aboutbutton" href="contact.html">Submit An Inquiry</a>
+</div>
+</header>
+<!-- Mobile -->
+<!-- This version of the header is displayed when screens are less than 645px -->
+<!-- The images from the desktop/tablet version were left out to keep the webpage clear and concise -->
+
+<div class="mobileheader">
+<h1>Spatia GIS Projects</h1>
+<p>See Your Next Project Here</p>
+<a class="mobileheaderbutton" href="contact.html">Submit An Inquiry</a>
+</div>
+<!--END of Header-->
+
+
+<!-- START of the Project Examples Section -->
+<!-- Carina Leale; Last Modified 7-Dec-2020 -->
+<div class="aboutblock">
+
+<!--Mineral Exploration Section-->
+<div class="row">
+<div class="col-8 col-left">
+<h1 class="title">Supporting Mineral Exploration Through Remote Sensing</h1>
+<!--Content inspired by: https://www.sciencedirect.com/science/article/abs/pii/S0169136899000074#:~:text=Remote%20sensing%20images%20are%20used,rocks%20by%20their%20spectral%20signatures.; https://en.wikipedia.org/wiki/Ring_of_Fire_(Northern_Ontario)-->
+<h5 class="subtitle">Ring of Fire, Northern Ontario</h5>
+<p class="bodytext">Remote sensing is the science of acquiring, processing, and interpreting images related to data from satellites, aircraft and drones that record the interaction between matter and electromagnetic energy. Since 2016, the experts at Spatia have been working closely with Chrom-Corp Inc., a mineral exploration firm interested in the mineral-rich James Bay Lowlands known as the “Ring of Fire”, to provide support with data collection, analysis, and interpretation of geological features.</p>
+<p class="bodytext">Through remote sensing technologies, Spatia has successfully supported the delineation of faults and fractures associated with localized ore deposits, as well as hydrothermally altered rocks through the analysis of spectral signatures. Landsat thematic mapper satellite images were widely used during the project to interpret both geological structures and alteration. Spatia digitally processed and enhanced the images to identify promising features. We produced detailed geological maps to assist in targeting drilling and exploration efforts, which were ground truthed by Chrom-Corp Inc.</p> 
+<p class="bodytext">In addition to supporting Chrom-Corp Inc. with their geological exploration, Spatia completed watershed analysis and wetland investigations as a component of their proposed mine site feasibility study.</p>
+</div>
+<!--Geology image retrieved from:https://commons.wikimedia.org/wiki/File:Larder_Lake_mine_Gold_Ore,_Ontario,_Canada.jpg-->
+<div class="col-4 col-right">
+<div class="figure"> <img src="images/projects_ore_350x300.jpg" class="projectsimages" alt="Ore Discovered Through Remote Sensing Technology" width="350" height="300">Gold ore discovered in the Ring of Fire as a result of Spatia's work using remote sensing.</div>
+</div>
+</div>
+<div class="linedivider"></div>
+<div class="row">
+
+<!--Utilites & Highspeed Internet -->
+<!--Content inspired by: https://www.ic.gc.ca/eic/site/119.nsf/eng/00002.html; https://developns.ca/projects/high-speed-internet/-->
+<div class="col-8 col-left">
+<h1 class="title">Creating Connections</h1>
+<h5 class="subtitle">Bringing High-Speed Internet to Nova Scotia</h5> 
+<p class="bodytext">Through a partnership with the Province of Nova Scotia and the Federal Government of Canada, Spatia contributed to the initiative to bring high-speed Internet to rural communities in Nova Scotia. Offering expertise in geospatial data acquisition and analysis, Spatia supported the development of a province-wide database for Internet utilities.</p>
+<p class="bodytext">As part of our partnership, Spatia also provided mapping services, which required compiling and analysing records from multiple stakeholders to create detailed maps of the province’s current Internet infrastructure. For data integrity purposes, our survey division based out of Halifax, NS completed ground truthing and established control points for future utility infrastructure surveys.</p>
+<p class="bodytext"> Expanding the current Internet network to rural areas required the province to support the establishment of new tower locations. Using remote sensing and site suitability analysis, Spatia provided recommendation for tower locations, and a plan for development.</p>
+</div>
+<div class="col-4 col-right">
+<!--Utilites image retrieved from: -->
+<div class="figure"> <img src="images/projects_novascotia_350x300.jpg" class="projectsimages" alt="Rural Nova Scotia" width="350" height="300">Rural homes in Nova Scotia scheduled to receive high-speed internet by 2022.</div>
+</div>
+</div>
+</div> 
+<!--END of the Project Examples Section-->
+
+
+<!--START of footer-->
+<!--Toby Agomuo; Last Modified: -->
+<div class = "footer">
+<div class="innerFooter">
+<div class ="logo">
+<!--Bottom Logo source https://logomakr.com/ -->
+<img alt="bottom_img" src ="images/cover.png">
+</div>
+<div class ="foot">
+<h1> Map Gallery</h1>
+<a href="#"> General reference Map</a>
+<a href="#"> Thematic Map</a>
+<a href="#"> Remote Sensing</a>
+</div>
+<div class ="foot">
+<h1> Jobs Done?</h1>
+<a href="#"> Africa</a>
+<a href="#"> Europe</a>
+<a href="#"> Asia</a>
+<a href="#"> North America</a>
+<a href="#"> South America</a>
+<a href="#"> Australia</a>
+</div>
+<div class ="foot">
+<h1> Contact US</h1>
+<span> Phone: +9052354446</span>
+<span>
+Spatia GIS Consulting<br>
+The Head Office Location<br>
+112, Greene Lane <br>
+Nova Scotia, <br>
+Canada
+</span>
+</div>
+</div>          
+</div>
+<!-- END of footer-->
+
+</body>
+</html>

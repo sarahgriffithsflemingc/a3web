@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Meet Our Team</title>
+<link rel = "shortcut icon" type = "image/png" href="images/favicon.png">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="grp12styles.css">
+</head>
+<body> 
+
+	
+<!-- START of Navbar -->
+<!-- Sarah Griffiths; Last Modified 7-Dec-2020 --> 
+<!-- Desktop-Tablet -->
+<!-- This section contains the navbar for desktop and tablet sized screens (above 645px) -->
+<!-- The navbar is displayed horizontally in an unordered list with the company logo to the right -->
+<!-- Our "many in one" page is accessed through a dropdown menu under GIS Services, available upon hover -->
+<!-- While the first option in the dropdown menu links to the top of the GIS page, the rest link to anchors on the GIS page based on main content headings -->
+<!-- The page currently on is highlighted in a different colour from the base navbar, which coincides with the colour you see upon hover -->
+<ul class="desktopnavbar">
+<li><a href="index.html">Home</a>
+<li class="dropdown">
+<button class="dropbtn">GIS Services</button>
+<div class="dropdown-content">
+<a href="GISservices.html">Service Inquiries</a>
+<a href="GISservices.html#Mapping">Municipal Mapping</a>
+<a href="GISservices.html#Web">GIS Web Applications</a>
+<a href="GISservices.html#Analysis">Spatial Analysis</a>
+<a href="GISservices.html#Sensing">Environmental Modeling and Remote Sensing</a>
+</div>
+</li>
+<li><a href="Projects.html">Projects</a>
+<li><a class="active" href="MeetOurTeam.html">Meet Our Team</a>
+<li><a href="Careers.html">Careers</a>
+<li class="desktopnavlogo"><img src ="images/navbarlogo.png" alt="Spatia GIS Company Logo" width="200" height="40">
+</ul>
+	
+<!-- Mobile -->
+<!-- This section contains the navbar that will display on small screens (below 645px) -->
+<!-- The menu changes from a horizontal display to a dropdown menu accessible by the "hamburger" button -->
+<!-- Hamburger modified from https://www.youtube.com/watch?v=At4B7A4GOPg&ab_channel=WebDevSimplified -->
+<!-- The following Javascript is used to make the hamburger interactive by click on/off to open and close the menu -->
+<script src="grp12javascript.js" defer></script>
+<nav class="mobilenavbar">
+<div class="company-title">
+<img src ="images/navbarlogo.png" alt="Spatia GIS Company Logo" width="200" height="40">
+</div>
+<a href="#" class="toggle-button">
+<span class="bar"></span>
+<span class="bar"></span>
+<span class="bar"></span>
+</a>
+<div class="mobilenavbar-links">
+<ul>
+<li><a href="index.html">Home</a></li>
+<li><a href="GISservices.html">GIS Serivces</a></li>
+<li><a href="Projects.html">Projects</a></li>
+<li><a href="MeetOurTeam.html">Meet Our Team</a></li>
+<li><a href="Careers.html">Careers</a></li>
+</ul>
+</div>
+</nav>
+<!-- END of Navbar-->
+
+	
+<!-- START of Header -->
+<!-- Sarah Griffiths; Last Modified 7-Dec-2020 -->
+<!-- Desktop-Tablet -->
+<!-- This section contains the header that is displayed on screens larger than 645px (desktop and tablets) -->
+<!-- The See Our Opportunity button links to our Careers page -->
+<header>
+<div class="head-text-left">
+<!-- Public Domain Creative Commons Image from https://pxhere.com/en/photo/1550299 ; "no attribution required" -->
+<img class="meetteamimage" src ="images/meetteam.jpg" alt="Photo of Employees" width="480" height="238">
+</div>
+<div class="head-text-right">
+<h1 class="company">The Faces of Spatia</h1>
+<p class="slogan">Specialists in GIS</p>
+<a class="aboutbutton" href="Careers.html">See Our Opportunities</a>
+</div>
+</header>
+	
+<!-- Mobile -->
+<!-- This version of the header is displayed when screens are less than 645px -->
+<!-- The images from the desktop/tablet version were left out to keep the webpage clear and concise -->
+<div class="mobileheader">
+<h1>The Faces of Spatia</h1>
+<p>Specialists in GIS</p>
+<a class="mobileheaderbutton" href="Careers.html">See Our Opportunities</a>
+</div>
+<!--END of Header-->
+
+
+<!-- START of Main Content-->	
+<div class="aboutblock">
+
+<!--START of  Carina's Information-->
+<!-- Toby Agomuo; Last Modified 6-DEC-2020-->
+<div class="row">
+<div class="col-8 col-left">
+<h1 class="title">Carina Leale</h1>
+<h5 class="subtitle">Cartography and Remote Sensing Specialist</h5>
+<p class="bodytext">Carina is a seasoned remote sensing professional with over eight years experience. She collects, evaluates, and interprets geographic information, develops maps, and manages geospatial databases. She is experience with processing aerial and satellite imagery to create products such as land cover maps. At Spatia, she monitors quality of remote sensing data collection operations to determine if procedural or equipment changes are necessary to maintain data integrity.</p>
+</div>
+<div class="col-4 col-right">
+<!-- Image provided by Carina -->
+<div class="figure"> <img src="images/carina.JPG" class="services" alt="Carina Leale" width="400" height="400">
+<p>GIS Technician and Remote Sensing Specialist, Spatia GIS Consulting</p></div>
+</div>
+</div>
+<div class="linedivider"></div>
+<!--END of Carina's Information-->
+
+<!--START of Sarah's Information-->
+<div class="row">
+<div class="col-8 col-right">
+<h1 class="title">Sarah Griffiths</h1>
+<h5 class="subtitle">UAV Drone Pilot, CAD Drafter and Geomatics Engineer, Spatia GIS Consulting</h5>
+<p class="bodytext">Sarah is an experienced UAV drone pilot, who oversees the ground and flight operations of our unmanned aircraft systems and conducts flight demonstrations. Sarah collects works both in the field collecting geospatial data, and in the office undertaking computer modelling to solve a variety of problems. She is responsible for analyzing spatial information and data using plans, maps, charts and computer applications.</p>
+</div>
+<div class="col-4 col-left">
+<!--Image retrieved from:https://wilderness-society.org/european-wilderness-network-the-wildest-places-in-europe/-->
+<div class="figure"> <img src="images/sarah.jpg" class="services" alt="Sarah Griffiths" width="400" height="400">
+<p>UAV Drone Pilot, CAD Drafter and Geomatics Engineer, Spatia GIS Consulting</p></div>
+</div>
+</div>
+<div class="linedivider"></div>
+<!--END of Sarah's Info-->	
+
+<!--Toby-->
+<!--Content Inspo from: https://www.gisresources.com/giswatershedwatershed-analysis/#:~:text=Watershed%20analysis%20refers%20to%20the,manually%20onto%20a%20topographic%20map.-->
+<div class="row">
+<div class="col-8 col-left">
+<h1 class="title">Toby Agomuo</h1>
+<h5 class="subtitle">Web and Application Developer, Database Administrator</h5>
+<p class="bodytext">Toby is an experienced web and applications developer whose role at Spatia is primarily focused on website and software application design and maintenance. He is proficient in many programming languages, management tools, content creation tools, applications, and digital media.</p>
+<p class="bodytext">In addition, Toby manages the maintenance and data integrity of geospatial databases for our client to ensure performance, reliability, and security of our data.</p>
+</div>
+<div class="col-4 col-right">
+<!--Image received from toby-->
+<div class="figure"> <img src="images/toby.jpg" class="services" alt="Toby" width="400" height="400">
+<p>Web and Applications Developer, Spatia GIS Consulting</p></div>
+</div>
+</div>
+<!--END of Meet ouy team-->	
+</div>
+<!--END of Main Content-->
+
+
+<!-- START of footer-->
+<!-- Toby Agomuo; Last modified:  Nov 23 2020 -->
+<div class = "footer">
+<div class="innerFooter">
+<div class ="logo">
+<!--Bottom Logo source https://logomakr.com/ -->
+<img src ="images/cover.png" alt="bottom_img" >
+</div>
+<div class ="foot">
+<h1> Map Gallery</h1>
+<a href="#"> General reference Map</a>
+<a href="#"> Thematic Map</a>
+<a href="#"> Remote Sensing</a>
+</div>
+<div class ="foot">
+<h1> Jobs Done?</h1>
+<a href="#"> Africa</a>
+<a href="#"> Europe</a>
+<a href="#"> Asia</a>
+<a href="#"> North America</a>
+<a href="#"> South America</a>
+<a href="#"> Australia</a>
+</div>
+<div class ="foot">
+<h1> Contact US</h1>
+<span> Phone: +9052354446</span>
+<span>
+Spatia GIS Consulting<br>
+The Head Office Location<br>
+112, Greene Lane <br>
+Nova Scotia, <br>
+Canada
+</span>
+</div>
+</div>
+</div>
+<!-- END of footer-->
+
+<!-- START of Javascript-->
+<!-- Toby Agomuo; Last modified:   -->
+<script>
+</script>
+<!-- END of JavaScript-->
+</body>
+</html>

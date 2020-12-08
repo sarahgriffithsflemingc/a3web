@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Contact Us</title>
+<link rel = "shortcut icon" type = "image/png" href="images/favicon.png">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="grp12styles.css">
+</head>
+<body > 
+
+  
+<!-- START of Navbar -->
+<!-- Sarah Griffiths; Last Modified 7-Dec-2020 --> 
+<!-- Desktop-Tablet -->
+<!-- This section contains the navbar for desktop and tablet sized screens (above 645px) -->
+<!-- The navbar is displayed horizontally in an unordered list with the company logo to the right -->
+<!-- Our "many in one" page is accessed through a dropdown menu under GIS Services, available upon hover -->
+<!-- While the first option in the dropdown menu links to the top of the GIS page, the rest link to anchors on the GIS page based on main content headings -->
+<!-- The page currently on is highlighted in a different colour from the base navbar, which coincides with the colour you see upon hover -->
+<ul class="desktopnavbar">
+<li><a class="active" href="index.html">Home</a>
+<li class="dropdown">
+<button class="dropbtn">GIS Services</button>
+<div class="dropdown-content">
+<a href="GISservices.html">Service Inquiries</a>
+<a href="GISservices.html#Mapping">Municipal Mapping</a>
+<a href="GISservices.html#Web">GIS Web Applications</a>
+<a href="GISservices.html#Analysis">Spatial Analysis</a>
+<a href="GISservices.html#Sensing">Environmental Modeling and Remote Sensing</a>
+</div>
+</li>
+<li><a href="Projects.html">Projects</a>
+<li><a href="MeetOurTeam.html">Meet Our Team</a>
+<li><a href="Careers.html">Careers</a>
+<li class="desktopnavlogo"><img src ="images/navbarlogo.png" alt="Spatia GIS Company Logo" width="200" height="40">
+</ul>
+  
+<!-- Mobile -->
+<!-- This section contains the navbar that will display on small screens (below 645px) -->
+<!-- The menu changes from a horizontal display to a dropdown menu accessible by the "hamburger" button -->
+<!-- Hamburger modified from https://www.youtube.com/watch?v=At4B7A4GOPg&ab_channel=WebDevSimplified -->
+<!-- The following Javascript is used to make the hamburger interactive by click on/off to open and close the menu -->
+<script src="grp12javascript.js" defer></script>
+<nav class="mobilenavbar">
+<div class="company-title">
+<img src ="images/navbarlogo.png" alt="Spatia GIS Company Logo" width="200" height="40">
+</div>
+<a href="#" class="toggle-button">
+<span class="bar"></span>
+<span class="bar"></span>
+<span class="bar"></span>
+</a>
+<div class="mobilenavbar-links">
+<ul>
+<li><a href="index.html">Home</a></li>
+<li><a href="GISservices.html">GIS Serivces</a></li>
+<li><a href="Projects.html">Projects</a></li>
+<li><a href="MeetOurTeam.html">Meet Our Team</a></li>
+<li><a href="Careers.html">Careers</a></li>
+</ul>
+</div>
+</nav>
+<!-- END of Navbar-->
+
+<!-- contact section -->
+<!-- Toby Agomuo-->
+<div class="bBox">
+<div class="contact-form">
+<h1>Contact Us</h1>
+<div class="txtb">
+<label>Full Name :</label>
+<input type="text" name="f_name" value="" placeholder="Enter Your Name">
+</div>
+<div class="txtb">
+<label>Email :</label>
+<input type="email" name="email" value="" placeholder="Enter Your Email">
+</div>
+<div class="txtb">
+<label>Phone Number :</label>
+<input type="text" name="pnum" value="" placeholder="Enter Your Phone Number">
+</div>
+<div class="txtb">
+<label>Message :</label>
+<textarea></textarea>
+</div>
+<a class="btn">Send</a>
+</div>
+</div>
+  
+</body>
+</html>

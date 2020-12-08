@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Home</title>
+<link rel = "shortcut icon" type = "image/png" href="images/favicon.png">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="grp12styles.css">
+</head>
+<body>
+  
+  
+<!-- START of Navbar -->
+<!-- Sarah Griffiths; Last Modified 7-Dec-2020 --> 
+<!-- Desktop-Tablet -->
+<!-- This section contains the navbar for desktop and tablet sized screens (above 645px) -->
+<!-- The navbar is displayed horizontally in an unordered list with the company logo to the right -->
+<!-- Our "many in one" page is accessed through a dropdown menu under GIS Services, available upon hover -->
+<!-- While the first option in the dropdown menu links to the top of the GIS page, the rest link to anchors on the GIS page based on main content headings -->
+<!-- The page currently on is highlighted in a different colour from the base navbar, which coincides with the colour you see upon hover -->
+<ul class="desktopnavbar">
+<li><a class="active" href="index.html">Home</a>
+<li class="dropdown">
+<button class="dropbtn">GIS Services</button>
+<div class="dropdown-content">
+<a href="GISservices.html">Service Inquiries</a>
+<a href="GISservices.html#Mapping">Municipal Mapping</a>
+<a href="GISservices.html#Web">GIS Web Applications</a>
+<a href="GISservices.html#Analysis">Spatial Analysis</a>
+<a href="GISservices.html#Sensing">Environmental Modeling and Remote Sensing</a>
+</div>
+</li>
+<li><a href="Projects.html">Projects</a>
+<li><a href="MeetOurTeam.html">Meet Our Team</a>
+<li><a href="Careers.html">Careers</a>
+<li class="desktopnavlogo"><img src ="images/navbarlogo.png" alt="Spatia GIS Company Logo" width="200" height="40">
+</ul>
+  
+<!-- Mobile -->
+<!-- This section contains the navbar that will display on small screens (below 645px) -->
+<!-- The menu changes from a horizontal display to a dropdown menu accessible by the "hamburger" button -->
+<!-- Hamburger modified from https://www.youtube.com/watch?v=At4B7A4GOPg&ab_channel=WebDevSimplified -->
+<!-- The following Javascript is used to make the hamburger interactive by click on/off to open and close the menu -->
+<script src="grp12javascript.js" defer></script>
+<nav class="mobilenavbar">
+<div class="company-title">
+<img src ="images/navbarlogo.png" alt="Spatia GIS Company Logo" width="200" height="40">
+</div>
+<a href="#" class="toggle-button">
+<span class="bar"></span>
+<span class="bar"></span>
+<span class="bar"></span>
+</a>
+<div class="mobilenavbar-links">
+<ul>
+<li><a href="index.html">Home</a></li>
+<li><a href="GISservices.html">GIS Serivces</a></li>
+<li><a href="Projects.html">Projects</a></li>
+<li><a href="MeetOurTeam.html">Meet Our Team</a></li>
+<li><a href="Careers.html">Careers</a></li>
+</ul>
+</div>
+</nav>
+<!-- END of Navbar-->
+
+<!-- START of Header -->
+<!-- Sarah Griffiths; Last Modified 7-Dec-2020 -->
+<!-- Desktop-Tablet -->
+<!-- This section contains the header that is displayed on screens larger than 645px (desktop and tablets) -->
+<!-- The About Us button links to an anchor further down the page -->
+<header>
+<div class="head-text-left">
+<img class="logo" src ="images/indexlogo.png" alt="Spatia GIS Company Logo" width="471" height="471">
+</div>
+<div class="head-text-right">
+<h1 class="company">Spatia GIS Consulting</h1>
+<p class="slogan">Excellence in Geographic Science</p>
+<a class="aboutbutton" href="#About">About Us</a>
+</div>
+</header>
+<!-- Mobile -->
+<!-- This version of the header is displayed when screens are less than 645px -->
+<!-- The images from the desktop/tablet version were left out to keep the webpage clear and concise -->
+<div class="mobileheader">
+<h1>Spatia GIS Consulting</h1>
+<p>Excellence in Geographic Science</p>
+</div>
+<!--END of Header-->
+
+
+<!-- START of the About the Company and Founder Sections -->
+<!-- Carina Leale; Last Modified 6-Dec-2020 -->
+
+ <!-- About -->
+<div class="aboutblock">
+<div class="row">
+<div class="col-9 col-left col-s-8">
+<h1 id="About" class="title">About Us</h1>
+<!--About Us Content inspired by: https://www.stantec.com/en/about; https://www.dstgroup.com/about-us/; https://www.evarigisconsulting.com/company-->
+<h5 class="subtitle">Providing reliable GIS consulting services to clients across Canada.</h5>
+<p class="bodytext"> At Spatia GIS Consulting (Spatia) we provide multi-disciplinary services to support a wide range of Geospatial Projects. 
+We prioratize working with our clients, communities and environment in mind.</p>
+<p class="bodytext"> Established in 1991, Spatia has become one of Canada's largest GIS firms specializing in the areas 
+of remote sensing, spatial analysis, municipal mapping, and the development of web-based GIS applications.
+Our team of highly skilled and innovative specialists have extensive experience in the private, government and nonprofit sectors. 
+We look forward to delivering a custom solution to your next geospatial project.</p> 
+</div>
+<div class = "col-3 col-right col-s-4">	
+<!--3D map image retrieved from: https://commons.wikimedia.org/wiki/File:Gis.jpg-->
+<!--How to add captions to images from: https://www.lifewire.com/caption-that-stays-with-image-3467838-->
+<div class="figure"> <img src="images/aboutcompanyimg1.jpg" class="aboutcompanyimg1" alt="About Us Image" width="350" height="300">3D geospatial infrastructure modelling. Hanover, ON.</div>
+</div>
+</div>
+<div class="row">
+
+<!-- Meet our Founder -->
+<!--Founder Content inspired by: https://www.stantec.com/en/about; https://www.dstgroup.com/about-us/; https:/c/www.evarigisconsulting.com/company-->
+<div class="linedivider"></div>
+<div class="col-3 col-left col-s-4">
+<!--CEO Image retrieved from: https://meta.wikimedia.org/wiki/Wikimedia_Foundation_Chief_Executive_Officer_and_Executive_Director#/media/File:Maher,_Katherine_April_2016.jpg-->
+<div class="figure"><img src="images/aboutcompanyimg2.jpg" class="aboutcompanyimg2" alt="Founder Image" width="350" height="300">Colleen Smith, Spatia GIS Consulting founder and CEO.</div>
+</div>
+<div class="col-9 col-right col-s-8">
+<h1 class="title">Meet Our Founder</h1>
+<h5 class="subtitle">Colleen Smith, Founder & CEO</h5>    
+<p class="bodytext">Colleen has over 30 years of experience in the geospatial information industry and over 20 years experience working with
+the ESRI suite and related technologies. As the founder of Spatia in 1991 she has helped lead the firm to success by aligning GIS technologies
+with client project needs. </p>
+<p class="bodytext">As CEO, Colleen is committed to growing new work and driving innovation within the geospatial community. She holds 
+and maintains strong client relationships by encouraging open communication and clear expectations.</p>
+</div>
+</div>
+</div>
+<!-- END of About the Company and Founder Sections -->    
+
+
+<!-- START of footer-->
+<!-- Toby Agomuo; Last modified:  Nov 23 2020 -->
+<div class = "footer">
+<div class="innerFooter">
+<div class ="logo">
+<!--Bottom Logo source https://logomakr.com/ -->
+<img alt="bottom_img" src ="images/cover.png">
+</div>
+<div class ="foot">
+<h1> Map Gallery</h1>
+<a href="#"> General reference Map</a>
+<a href="#"> Thematic Map</a>
+<a href="#"> Remote Sensing</a>
+</div>
+<div class ="foot">
+<h1> Jobs Done?</h1>
+<a href="#"> Africa</a>
+<a href="#"> Europe</a>
+<a href="#"> Asia</a>
+<a href="#"> North America</a>
+<a href="#"> South America</a>
+<a href="#"> Australia</a>
+</div>
+<div class ="foot">
+<h1> Contact US</h1>
+<span> Phone: +9052354446</span>
+<span>
+Spatia GIS Consulting<br>
+The Head Office Location<br>
+112, Greene Lane <br>
+Nova Scotia, <br>
+Canada
+</span>
+</div>
+</div>
+</div>
+<!-- END of footer-->
+<!-- START of Javascript-->
+<!-- Toby Agomuo; Last modified:   -->
+<script>
+</script>
+<!-- END of JavaScript-->
+
+</body>
+</html>

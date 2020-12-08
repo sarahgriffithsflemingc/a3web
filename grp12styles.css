@@ -1,0 +1,518 @@
+/* ----------   GLOBAL CSS STYLES    ---------- */
+/*Colours: gray-#7D8D87, green-#9EB45B, lightgray-#f1f1f1, black-#000, white-#fff, tan-#CBC497, brown-#B87f45 */
+/*Colour Palette from: https://www.vyond.com/resources/20-color-palettes-for-your-brand-design/*/
+
+/*START of media tags for resposnsive design*/
+/*Carina Leale: Last modified 26-Nov-2020*/
+/*Retrieved 12 column design from: https://www.w3schools.com/css/css_rwd_grid.asp*/
+/* For mobile phones: */
+[class*="col-"] {
+width: 100%;}
+/*For Tablets: */
+@media only screen and (min-width: 600px) {
+.col-s-4 {width: 33.33%;}
+.col-s-8 {width: 66.66%;}}
+/*For Desktops */
+@media only screen and (min-width: 768px) {
+.col-3 {width: 25%;}
+.col-4 {width: 33.33%;}
+.col-8 {width: 66.66%;}
+.col-9 {width: 75%;}}
+/*END of media tags for responsive design*/
+/* ----------  END GLOBAL CSS STYLES  --------- */
+
+
+/* -------   INDEX (HOME) CSS STYLES    ------- */
+/* START of Navbar and Header CSS*/
+/*Sarah Griffiths:Last Modified 7-Dec-2020*/
+/* Desktop-Tablet Navigation Bar*/
+/* Dropdown Navbar modified from https://www.w3schools.com/howto/howto_css_dropdown_navbar.asp */
+/* Dropdown Navbar modified also with aid of https://www.w3schools.com/cssref/pr_pos_z-index.asp to stack the list - explained the z-index */
+/* Dropdown Navbar modified also with aid of https://www.w3schools.com/cssref/pr_class_position.asp to understand position absolute (used a lot)*/
+/* Navbar for mobile set to display:none so it can be called only when necessary for smaller screens */
+/* Navbar changes colour on hover and highlights the active page */
+/* Dropdown menu hidden until GIS Services is hovered over */
+ul {list-style-type: none;
+overflow: hidden;
+background-color: #CBC497;
+padding: 0;
+margin:0}
+li {float: left}
+li a {display: block;
+color: whitesmoke;
+font-family: Arial, Helvetica, sans-serif;
+font-size: 20px;
+padding: 16px 16px;
+text-decoration: none}
+li a:hover {background-color: whitesmoke; 
+color: #000}
+.active {background-color: whitesmoke;
+color: #000}
+.dropdown {float: left}
+.dropdown .dropbtn {
+font-size: 20px;  
+border: none;
+outline: none;
+color: whitesmoke;
+padding: 16px 16px;
+background-color: inherit}
+.dropdown:hover .dropbtn {
+background-color: whitesmoke;
+color: #000}
+.dropdown-content {
+display: none;
+position: absolute;
+background-color: #f1f1f1;
+z-index: 1}
+.dropdown-content a {
+color: black;
+padding: 16px 16px;
+text-decoration: none;
+display: block}
+.dropdown:hover .dropdown-content {
+display: block}
+.desktopnavlogo {float:right;
+padding:5px 10px}
+.mobilenavbar{display:none}
+
+/* Tablet-Size Adjustment to Navigation Bar */
+/* Use of media queries following https://www.w3schools.com/css/css_rwd_mediaqueries.asp */
+/* Adjustments made to prevent the image from colliding with the text */
+@media only screen and (max-width: 847px) and (min-width:645px) {
+.desktopnavlogo{display:none}}
+
+/* Mobile Navigation Bar */
+/* Hamburger modified from https://www.youtube.com/watch?v=At4B7A4GOPg&ab_channel=WebDevSimplified */		
+/* Use of vw units for scaling to viewport following https://www.w3schools.com/cssref/css_units.asp */
+/* https://www.w3schools.com/cssref/pr_class_display.asp used to understand display used in aforementioned video */
+/* Hamburger "symbol" created by making three lines using spans and then placing them in a column and space them using justify-conent */
+/* Navigation menu hidden until user clicks on hamburger (aided by javascript). Menu closes when hamburger is clicked again */
+/* Desktop navbar is display:none so it is not showing while in mobile format */
+@media only screen and (max-width: 645px) {
+.desktopnavbar{display:none}
+.toggle-button {position: absolute;
+top:1%;
+right:82%;
+padding: 15px 12px;
+display: flex;
+flex-direction: column;
+justify-content: space-between;
+width:30px;
+height: 21px}
+.toggle-button .bar{height: 3px;
+background-color: white;
+border-radius: 10px}
+.mobilenavbar-links {display: none;
+background-color:white;
+padding:3vw;
+position:absolute;
+left:0;
+top:62px;}
+.mobilenavbar {flex-direction: column;
+display: flex;
+align-items: center;
+background-color: #CBC497;
+padding:1vw}
+ul {flex-direction: column;
+display: flex;
+background-color:white}
+li a {padding: 2vw;
+color: #000}
+.mobilenavbar-links.active {display: flex}
+.company-title{float:right;
+margin:2px;
+padding:0}}
+
+/* Desktop-Tablet Header */	
+/* Opacity adopted from https://www.w3schools.com/cssref/css3_pr_opacity.asp to "desaturate" the colours as there was a lot of colour blocking at the top */
+/* I created two versions of the 'header,' one for desktop/tablet and one for mobile screen sizes */
+/* Header layout for desktop/tablet inspired by template from: https://www.w3schools.com/w3css/tryw3css_templates_start_page.htm */
+/* Used vw sizing to help scale the images and text as part of repsonsive design */
+/* Mobile header is display:none so it can be called only for mobile screen sizes */
+header {
+text-align: center;
+padding-top:5vw;
+padding-bottom: 30vw;
+background-color: #9EB45B;
+opacity: 0.9;
+color: whitesmoke;
+padding-right:75px;
+padding-left: 75px}
+.head-text-right {float: right}
+.head-text-left {float: left}
+.logo {float: left;
+width:25vw;
+height:25vw}
+.company {font-size:5vw;
+margin-top:2vw;
+font-family:Arial, Helvetica, sans-serif;
+font-weight:400}
+.slogan {font-size:3vw;
+margin: 3vw;
+font-family:Arial, Helvetica, sans-serif}
+.aboutbutton {display: inline-block;
+background-color:#000;
+padding-right: 30px;
+padding-left: 30px;
+padding-bottom:15px;
+padding-top: 15px;
+color: whitesmoke;
+font-family:Arial, Helvetica, sans-serif;
+font-size: 18px;
+text-decoration: none}
+a:hover {background-color: #f1f1f1;
+color:#000}		
+.mobileheader{display:none}
+
+/* Tablet-Size Adjustment to Header */
+/* Adjustments made to prevent the image from colliding with the text */
+@media only screen and (max-width: 847px) and (min-width:645px) {
+header{padding-right:5vw;
+padding-left: 5vw}}
+
+/* Mobile Header */
+/* Header Responsive Design modified from/inspired by https://www.youtube.com/watch?v=ZYV6dYtz4HA&ab_channel=DaniKrossing */
+/* I like his use of removing the "Wrapper" which inspired me to remove the images from the desktop version and make a smaller version for mobile */
+/* The same buttons are used in the mobile header as used in the desktop version, excluding the About Us button as on mobile, the section is closer to the users view upon page load */
+@media only screen and (max-width: 645px) {
+header {display:none}
+.mobileheader{display:block;
+background-color: #9EB45B;
+padding:10px 10px 20px 10px}
+.mobileheader h1 {font-size: 30px;
+text-align: center;
+font-family: Arial, Helvetica, sans-serif;
+color: whitesmoke}
+.mobileheader p {font-size: 20px;
+text-align: center;
+font-family:Arial, Helvetica, sans-serif;
+color: whitesmoke}
+.mobileheaderbutton {display: block;
+background-color:#000;
+padding-right: 30px;
+padding-left: 30px;
+padding-bottom:15px;
+padding-top: 15px;
+color: whitesmoke;
+font-family:Arial, Helvetica, sans-serif;
+font-size: 18px;
+text-decoration: none;
+text-align:center;
+margin:10px 35px 10px 35px}}
+/*END of Navbar and Header CSS*/
+
+
+/* START of About Section CSS
+Carina Leale: Last Modified 6-Dec-2020*/
+/*CSS Inspo from: https://www.w3schools.com/w3css/tryw3css_templates_start_page.htm; https://www.evarigisconsulting.com/company */
+/* Create two columns that float next to each other */
+.col-left {
+float: left;}
+.col-right {
+float: right;}
+/* Clear floats after the columns */
+.row:after {
+content: "";
+display: table;
+clear: both;}
+.aboutblock {background-color:whitesmoke;
+padding-bottom: 1%;
+padding-top: 1%;}
+.title {font-size:40px;
+font-family:Arial, Helvetica, sans-serif;
+font-weight:400;
+color: #B87f45;
+padding-left: 5%;
+padding-right: 5%;}
+.subtitle  {padding-top:0.25%;
+padding-bottom:0.25%;
+font-family:Arial, Helvetica, sans-serif;
+font-size:large;
+font-weight:600;
+color: #7D8D87;
+padding-left: 5%;
+padding-right: 5%;}
+.bodytext {font-family:Arial, Helvetica, sans-serif;
+font-size:medium;
+color:#7D8D87;
+font-weight:300;
+padding-left: 5%;
+padding-right: 5%;
+line-height: 200%}
+.linedivider {border-top: 1.5px #9EB45B solid;
+padding-left: 5%;
+padding-right: 5%;}
+img.aboutcompanyimg1 {display:block;
+margin-left:auto;
+margin-top:auto;
+margin-bottom:auto;
+margin-right:auto;
+max-width: 100%;
+height: auto;
+padding: 3%;}
+img.aboutcompanyimg2 {display:block;
+margin-left:auto;
+margin-right:auto;
+margin-top:auto;
+margin-bottom:auto;
+max-width: 100%;
+height: auto;
+padding: 3%;} 
+.figure {font-size:80%;
+color:#7D8D87;
+font-family: arial;
+text-align: center;
+padding: 3%}
+/*END of About Section CSS*/
+
+
+/*START of Footer CSS
+Toby Agomuo; Last Modified: */
+.footer{
+width: 100%;
+display: block;
+overflow: hidden;
+padding: 70px 0;
+box-sizing: border-box;
+background-color:#9EB45B;
+}
+.innerFooter{
+    display: block;
+    margin: 0 auto;
+    width: 1100px;
+    height: 100%;
+    }
+.innerFooter .logo{
+width: 35%;
+float: left;
+height: 100%;
+display: block;}
+.innerFooter .logo img{
+width: 205px;
+height: auto;}
+.innerFooter .foot{
+width: calc(21.67% - 20px);
+margin-right: 10px;
+float: left;
+height: 100%;}
+.innerFooter.foot :last-child{
+margin-right: 0;}
+.innerFooter .foot h1{
+font-family: 'arial';
+font-size: 22px;
+color: white;
+display: block;
+width: 100%;
+margin-bottom: 20px;}
+.innerFooter .foot a{
+font-family: 'arial';
+font-size: 18px;
+color: white;
+display: block;
+font-weight: 200;
+width: 100%;
+padding-bottom: 5px;}
+.innerFooter .foot li{
+display: inline-block;
+padding: 0 5px;
+font-size: 20px;}
+.innerFooter .foot span{
+color: white;
+font-family: 'arial';
+font-size: 16px;
+font-weight: 200;
+display: block;
+width: 100%;
+padding-top: 20px;}
+.footer-bottom {
+text-align: center;
+color: white;
+padding-top: 50px;}       
+@media  (max-width: 800px)
+{
+.footer .innerFooter{
+        width: 90px;  
+}
+.innerFooter .logo,
+.innerFooter .foot{
+    width: 100%;
+    margin-bottom: 30px;
+}
+}
+/*END of Footer CSS */
+
+
+/* ----- START of Contact us CSS    ----- */
+/*Toby Agomuo; Last Modified: */
+/* image source https://pxhere.com/en/photo/113640 */
+.bBox{
+padding: 0 100px;
+background-image: url("images/pix.jpg");
+height: 100vh;
+background-size: cover;
+}
+.contact-form{
+width: 85%;
+max-width: 600px;
+background: #f1f1f1;
+position: absolute;
+top: 50%;
+left: 50%;
+transform: translate(-50%,-50%);
+padding: 30px 40px;
+box-sizing: border-box;
+border-radius: 8px;
+text-align: center;
+box-shadow: 0 0 20px #000000b3;
+font-family: "Montserrat",sans-serif;
+}
+.contact-form h1{
+margin-top: 0;
+font-weight: 200;
+}
+.txtb{
+border:1px solid gray;
+margin: 8px 0;
+padding: 12px 18px;
+border-radius: 8px;
+}
+.txtb label{
+display: block;
+text-align: left;
+color: #333;
+text-transform: uppercase;
+font-size: 14px;
+}
+.txtb input,.txtb textarea{
+width: 100%;
+border: none;
+background: none;
+outline: none;
+font-size: 18px;
+margin-top: 6px;
+}
+.btn{
+display: inline-block;
+background: #CBC497;
+padding: 14px 0;
+color: white;
+text-transform: uppercase;
+cursor: pointer;
+margin-top: 8px;
+width: 100%;
+}
+/*END of Contact Us CSS*/
+
+/* -----   END INDEX (HOME) CSS STYLES    ----- */
+
+
+/* -------   GIS SERVICES CSS STYLES    ------- */
+/* START of GIS Services Page Navbar and Header */
+/* Sarah Griffiths; Last modified 7-Dec-2020*/
+/* Styling to make the button appear like it is "active" as the other li a tags were on other pages */
+/* Desktop-Tablet Navigation Bar*/
+.GIS-page-button {
+    font-size: 20px;  
+    border: none;
+    outline: none;
+    color: #000;
+    padding: 16px 16px;
+    background-color: whitesmoke}		
+/* Specific scaling for page specific image */		
+/* Desktop-Tablet Header */
+.gisheaderimage {float: left;
+    width: 30vw;
+    height:20vw}
+/* Mobile features inherited from Index */
+
+/*START of GIS Services page image formating*/	
+/*Carina Leale; Last Modified: 6-Dec-2020*/
+img.services {
+display:block;
+margin-left:auto;
+margin-right:auto;
+margin-top:auto;
+margin-bottom:auto;
+max-width: 100%;
+height: auto;
+padding: 3%;}
+/*END of GIS Services page image formatting*/
+/* -----   END GIS SERVICES CSS STYLES    ----- */
+
+
+/* ---------   PROJECT  CSS STYLES    --------- */
+/* START of Project Page Navbar and Header */
+/* Sarah Griffiths; Last Modified: 7-Dec-2020 */
+/* Desktop-Tablet Header */
+/* Specific scaling for page specific image */	
+.projectsheaderimage {float: left;
+width: 32vw;
+height:21vw}
+/* Mobile features inherited from Index */
+/* END of Project Page Navbar and Header */
+
+/*START of Project Examples Section */
+/*Carina Leale; Last Modified: 7-Dec-2020*/
+img.projectsimages{
+display:block;
+margin-left:auto;
+margin-right:auto;
+margin-top:auto;
+margin-bottom:auto;
+max-width: 100%;
+height: auto;
+padding: 3%;} 
+/*END of Project Examples Section*/
+/* --------   END PROJECT CSS STYLES    ------- */
+
+
+/* -------   MEET OUR TEAM CSS STYLES    ------- */
+/* START of Meet Our Team Page Navbar and Header */
+/* Sarah Griffiths; Last Modified: 7-Dec-2020 */
+/* Desktop-Tablet Header */
+/* Specific scaling for page specific image */	
+.meetteamimage{float:left;
+width:35vw;
+height:18vw}
+/* Mobile features inherited from Index */
+/* END of Meet Our Team Page Navbar and Header */
+/* ------  END MEET OUR TEAM CSS STYLES   ------ */
+
+
+/* --------     CAREERS CSS STYLES     --------- */
+/* START of Careers Page Navbar and Header */
+/* Sarah Griffiths; Last Modified: 7-Dec-2020 */
+/* START of Careers Page Navbar and Header */
+/* Sarah Griffiths; Last Modified: 7-Dec-2020 */
+/* Desktop-Tablet Header */
+/* Specific scaling for page specific image */	
+.careersheaderimage {float: left;
+width: 31vw;
+height:20vw}
+/* Mobile features inherited from Index */
+/* END of Careers Page Navbar and Header */
+
+
+/*START of Careers job postings*/
+/*Carina Leale; Last Modified 6-Dec-2020*/
+/*Style inspiration from: https://www.evarigisconsulting.com/careers*/
+.careerscenter{text-align: center;}
+.careerlist{font-family:Arial, Helvetica, sans-serif;
+font-size:medium;
+color:#7D8D87;
+font-weight:300;
+padding-left: 5%;
+padding-right: 5%;
+line-height: 150%}
+.careertitles{padding-top:0.25%;
+padding-bottom:0.25%;
+margin-top:1%;
+margin-bottom:0.2%;
+font-family:Arial, Helvetica, sans-serif;
+font-size:large;
+font-weight:600;
+color: #7D8D87;
+padding-left: 5%;
+padding-right: 5%;}
+/*END of Careers job postings*/
+/* ------     END CAREERS CSS STYLES     ------- */
